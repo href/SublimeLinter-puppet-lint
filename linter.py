@@ -10,15 +10,15 @@
 
 """This module exports the PuppetLint plugin class."""
 
-from SublimeLinter.lint import Linter, util
+from SublimeLinter.lint import RubyLinter, util
 
 
-class PuppetLint(Linter):
+class PuppetLint(RubyLinter):
 
     """Provides an interface to puppet-lint."""
 
     syntax = 'puppet'
-    cmd = ('puppet-lint', '--log-format', '%{linenumber}:%{column}:%{kind}:%{message}', '*')
+    cmd = ('puppet-lint', '--log-format', '%{line}:%{column}:%{kind}:%{message}', '*')
     executable = None
     regex = (
         r'^(?P<line>\d+):(?P<col>\d+):'
