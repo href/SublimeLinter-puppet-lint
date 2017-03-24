@@ -7,4 +7,4 @@ This linter plugin for SublimeLinter provides an interface to puppet-lint.
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/stopdropandrew/SublimeLinter-puppet-lint
+https://github.com/dschaaff/SublimeLinter-puppet-lint
