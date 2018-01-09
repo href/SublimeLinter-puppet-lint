@@ -10,10 +10,10 @@
 
 """This module exports the PuppetLint plugin class."""
 
-from SublimeLinter.lint import RubyLinter, util
+from SublimeLinter.lint import Linter, util
 
 
-class PuppetLint(RubyLinter):
+class PuppetLint(Linter):
 
     """Provides an interface to puppet-lint."""
 
