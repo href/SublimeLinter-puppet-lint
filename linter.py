@@ -16,7 +16,9 @@ from SublimeLinter.lint import Linter, util
 class PuppetLint(Linter):
     """Provides an interface to puppet-lint."""
 
-    syntax = 'puppet'
+    defaults = {
+        'selector': 'source.puppet'
+    }
     cmd = ('puppet-lint', '--log-format', '%{line}:%{column}:%{kind}:%{message}', '*')
     executable = None
     version_args = '--version'
